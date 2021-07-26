@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Profile Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="d-flex justify-content-center align-items-center vh-100 main">
+    <div class="container container-cust text-light w-50 p-3 rounded-cust shadow-lg breathAnimation">
+      <div class="emptyDiv">
+
+        <!-- PopUp Div action JS disableForWeb-->
+        <div class="w-100 text-center mt-2 p-3 d-none popUpDiv rounded-cust">
+
+          <i class="d-block bi bi-x-circle-fill text-end text-light mb-0 closeIcon"></i>
+
+          <div class="socialIcons">
+            <a class="text-decoration-none p-2" href="https://github.com/sat-sid" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+            <a class="text-decoration-none p-2" href="#">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="text-decoration-none p-2" href="https://twitter.com/">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+
+          <!-- In next Update -->
+          <!-- <div class="hiddenThemeSelector">
+            <div class="hiddenThemes">
+              <input class="form-check-input" type="radio" name="Theme" value="thD1">
+              <input class="form-check-input" type="radio" name="Theme" value="thD2">
+              <input class="form-check-input" type="radio" name="Theme" value="thL1">
+              <input class="form-check-input" type="radio" name="Theme" value="thL2">
+              <input class="form-check-input" type="radio" name="Theme" value="thL3">
+            </div>
+            <div class="form-switch hiddenTextColors">
+              <input class="form-check-input" type="checkbox" name="ThemeText" value="Light">
+            </div>
+
+          </div> -->
+
+        </div>
+
+        <!-- StatusBar Div  -->
+        <div class="d-flex flex-column text-dark statusBarMain">
+
+          <!-- statusBarIcons display only for mobile display -->
+          <div class="d-flex flex-row ms-auto pt-2 statusBarIcons d-none">
+            <div class="px-1 dateDiv">
+              <p class="timeTotime">hh : mm</p>
+            </div>
+            <div class="px-1 signalIcon">
+              <p>&#128246;</p>
+              <!-- <i class="bi bi-reception-4"></i> -->
+            </div>
+            <div class="px-1 batteryIcon">
+              <i class="bi bi-battery-full"></i>
+            </div>
+          </div>
+
+          <!-- statusBarIcons display on both-->
+          <div class="ms-auto navDotsDiv">
+            <h1 class="navDots">. . .</h1>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center w-100 p-3 profileHero">
+          <div class="d-flex justify-content-center align-items-center w-50 imgDiv">
+            <img class="shadow rounded-circle profileImg" src="images/profile_pic.png" alt="">
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center w-100 desig">
+
+            <div class="bg-dark h-75 p-3 rounded-pill shadow desgDiv">
+
+              <h3 class="mt-2 mx-2 title"></h3>
+              <!-- <h3 class="mt-2 mx-2">Web Developer</h3> -->
+              <p class="desgOnClick"></p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center text-dark d-none opacity-cust dropDownIconDiv">
+          <i class="bi bi-chevron-compact-down biDownIcon"></i>
+          <i class="bi bi-dash d-none biDashIcon"></i>
+        </div>
+
+        <div class="p-3 mt-4 text-dark text-center textArea d-none">
+
+          <p class="textAreaPara">
+            &quot;
+            If you like what you just saw! Then click on that button below and we can discuss about our next project.
+            &quot;
+          </p>
+          <div class="d-flex justify-content-center align-items-center hireMeDiv">
+            <div class="hireMeBtn"></div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Script for bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Script for custom JS action -->
+  <script src="indexNew.js"></script>
+</body>
+
+<footer class="w-100 text-center">
+  <p>&copy; Sat-Sid</p>
+</footer>
+
+</html>

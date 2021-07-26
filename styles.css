@@ -1,0 +1,163 @@
+
+:root {
+  --awesomeGradient1: linear-gradient(to bottom right, #c3c5de 0%, #e2e3f4 100%);
+  --awesomeGradient2: linear-gradient(to bottom right, #2b4468 0%, #adb8c8 100%);
+  --awesomeGradient3: linear-gradient(to top right, #1d1d22 0%, #6a6bff 100%);
+  --awesomeGradient4: linear-gradient(to right, #ffa900 0%, #ff7f2a 100%);
+  --awesomeGradient5: linear-gradient(to bottom, #33ccff 0%, #99ffcc 100%);
+  --awesomeGradient6: linear-gradient(to top right, #66ccff 0%, #99ffcc 100%);
+}
+
+/* Themes */
+.themeDark1{
+  background: var(--awesomeGradient2);
+}
+
+.themeDark2{
+  background: var(--awesomeGradient4);
+}
+
+.themeDark3{
+  background: var(--awesomeGradient3);
+}
+
+.themeLight1{
+  background: var(--awesomeGradient5);
+}
+
+.themeLight2{
+  background: var(--awesomeGradient6);
+}
+
+.themeLight3{
+  background: var(--awesomeGradient1);
+}
+
+body {
+  background: url(images/background_img.png) no-repeat fixed center;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+  font-size: 0.83rem;
+}
+
+.statusBarIcons p{
+  margin-bottom: 0;
+}
+
+a .bi{
+  font-size: 1.5rem;
+  transition: font-size 0.3s;
+}
+
+a .bi:hover{
+  font-size: 1.7rem;
+}
+
+.navDots:hover, .closeIcon:hover {
+  cursor: pointer;
+}
+
+.container-cust {
+  position: relative;
+}
+
+.container-cust:hover {
+  animation-iteration-count: 0;
+}
+
+.profileImg {
+  width: 100px;
+  height: 100px;
+}
+
+.marginForHero{
+  margin-top: 30%;
+}
+
+.profileImgMobile {
+  width: 70px;
+  height: 70px;
+}
+
+.mt-5-cust{
+  margin-top: 5.5rem;
+}
+
+.statusBarMain {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 85%;
+}
+
+.rounded-cust {
+  border-radius: 30px;
+}
+
+.opacity-cust{
+  opacity: 0.5;
+}
+
+.dropDownIconDiv i{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Animations { */
+.breathAnimation {
+  animation-name: animateProfile;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animateProfile {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: 10px;
+  }
+
+  50% {
+    top: 0;
+  }
+
+  75% {
+    top: -10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+
+/* For Javascript/Jquery{ */
+
+.onExpand {
+  width: 260px;
+  height: 550px;
+}
+
+.screenSize {
+  position: relative;
+  border-radius: 35px;
+  height: 520px;
+  box-shadow: 0 2px 8px 1px #333333;
+}
+
+.popUpMesg {
+  height: 120px;
+  width: 100%;
+  background-color: #212529;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.9;
+}
