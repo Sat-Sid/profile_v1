@@ -3,6 +3,7 @@
 var randomTheme = randomThemeSelector();
 var currentView = "desktop";
 var hasClicked = "no";
+var avatarUrl = "images/avatar.gif"; //update_v.1
 
 $(".statusBarIcons").removeClass("d-flex");
 $(".container").addClass(randomTheme);
@@ -84,6 +85,7 @@ function mobileModelView() {
   $(".profileHero").addClass(randomTheme);
   $("img").removeClass("profileImg");
   $("img").addClass("profileImgMobile");
+  $("img").attr("src", avatarUrl); //update_v.1
   $(".desgDiv").removeClass("bg-dark h-75 p-3 rounded-pill shadow");
   currentView = "mobile"; //check
 }
@@ -155,6 +157,7 @@ function toDesktopView(){
   $(".imgDiv").removeClass("mt-5-cust");
   $("img").addClass("profileImg");
   $("img").removeClass("profileImgMobile");
+  $("img").attr("src", "images/profile_pic.png"); //update_v.1
   $(".desig").removeClass("ms-2 mt-5-cust");
   $(".desgDiv").addClass("bg-dark h-75 p-3 rounded-pill shadow");
   $(".desgDiv").removeClass("text-dark");
